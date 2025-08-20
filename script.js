@@ -222,3 +222,5 @@ for(i=1; i<large.length;i++){
     }
 }
 console.log(largest);
+
+console.log(large.slice(1));
