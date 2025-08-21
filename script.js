@@ -224,3 +224,45 @@ for(i=1; i<large.length;i++){
 console.log(largest);
 
 console.log(large.slice(1));
+
+function prime(isPrime){
+if(isPrime <= 1){
+    return false
+}
+else{
+    for (let i=2 ; i<isPrime; i++){
+        isPrime%i===0;
+        return false;
+    }
+ return true   
+}
+}
+
+console.log(prime(4));
+
+const fibon= [0,1];
+for(i=0;i<100;i++){
+const prev = fibon[fibon.length-1];
+const old = fibon[fibon.length-2];
+const newOne = old+prev
+fibon.push(newOne);
+}
+console.log(fibon)
+
+// Factorial number
+function fact(n){
+
+let result = 1;
+
+// for(let i=result; i<=n; i--){
+//     result *= i;  
+// }
+let i = n;
+do {
+    result *=i;
+    i--;
+} while (i>1);
+return result
+}
+
+console.log(fact(6));
